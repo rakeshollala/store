@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meal Plan Generator</title>
+    <link rel="stylesheet" href="./store css/store.css">
+    <script src="./store javascript/store.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Meal Plan Generator</h1>
+    </header>
+
+    <section>
+        <form id="mealPlanForm">
+            <label for="numberOfMeals">Number of Meals:</label>
+            <select id="numberOfMeals" name="numberOfMeals">
+                <option value="2">Two Meals</option>
+                <option value="3">Three Meals</option>
+                <option value="5">Five Meals</option>
+            </select>
+
+            <label for="dietPreference">Diet Preference Specification:</label>
+            <select id="dietPreference" name="dietPreference">
+                <option value="balanced">Balanced</option>
+                <option value="lowCarb">Low Carb</option>
+                <option value="lowFat">Low Fat</option>
+            </select>
+
+            <label for="healthSpecification">Health Specification:</label>
+            <select id="healthSpecification" name="healthSpecification">
+                <option value="vegan">Vegan</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="alcoholFree">Alcohol-Free</option>
+                <option value="peanutsFree">Peanuts-Free</option>
+            </select>
+
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" name="calories" required>
+
+            <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Meal Plan Generator. All rights reserved.</p>
+    </footer>
+
+    <!-- Add any additional scripts or external resources here -->
+    <script>
+        function generateMealPlan() {
+            // Add your meal plan generation logic here
+            alert('Meal plan generated!');
+        }
+    </script>
+</body>
+
+</html>
